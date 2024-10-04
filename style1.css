@@ -77,9 +77,14 @@ header{
     text-decoration: none;
     color: #e8e8e8;
 }
+.banner-text p:hover{
+    transition: all .4s;
+    transform: translateY(-.25em);
+}
 main{
-    margin: 20px;
+    /* margin: 20px; */
     /* display: flex; */
+    margin-bottom: 60px;
     background-color: #e8e8e8;
 }
 .sideleft{
@@ -96,11 +101,13 @@ main{
 ul li a{
     text-decoration: none;
     color: black;
+    padding: 30px;
 }
 ul li{
     font-size: 30px;
     justify-content: center;
     list-style-type: none;
+    margin: 20px;
 }
 ul{
     padding: 0;
@@ -118,6 +125,10 @@ ul{
     flex: 1;
     width: 100%;
 }
+.right-img img:hover{
+    transition: all .4s;
+    transform: rotate(0.5turn);
+}
 .left-text{
     flex: 2;
     width: 90%;
@@ -126,6 +137,11 @@ ul{
     align-self: center;
     align-content: center;
     text-align: center;
+}
+
+.left-text ul li:hover{
+    transition: all .4s;
+    transform: translateY(-.2em);
 }
 .assignments{
     display: grid;
@@ -189,10 +205,12 @@ h3 a{
     font-size: 30px;
     font-weight: 500;
 }
-
-
+.box p a{
+    text-decoration: none;
+    color: black;
+}
 footer{
-    padding: 80px;
+    padding: 40px;
     text-align: center;
     background-color: #BF7282;
     color: white;
