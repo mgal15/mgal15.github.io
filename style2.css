@@ -3,6 +3,19 @@
 *{
     box-sizing: border-box;
 }
+#head{
+    padding: 15px;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
 
 #wrapper{
     margin: 20px 250px;
