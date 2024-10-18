@@ -18,6 +18,8 @@ function gif1Function(){
     document.querySelector("h3").textContent = "Things that make me Angry";
     document.querySelector("h3").style.color="#EC1625";
     document.querySelector("h3").style.fontFamily = "IM Fell DW Pica SC";
+    document.getElementById("music").src = "angry_music.mp3";
+    document.querySelector("footer").querySelector("p").style.color = "#EC1625"
 }
 
 function gif2Function(){
@@ -27,6 +29,8 @@ function gif2Function(){
     document.querySelector("h3").textContent = "Things that make me Angry";
     document.querySelector("h3").style.color="#EC1625";
     document.querySelector("h3").style.fontFamily = "IM Fell DW Pica SC";
+    document.getElementById("music").src = "angry_music.mp3";
+    document.querySelector("footer").querySelector("p").style.color = "#EC1625"
 }
 
 function fav1Function(){
