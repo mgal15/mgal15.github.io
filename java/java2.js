@@ -12,29 +12,29 @@ function nameFunction(){
 }
 
 function gif1Function(){
-    document.getElementById("gif1").src = "fire.webp"
-    document.getElementById("gif2").src = "fire.webp"
+    document.getElementById("gif1").src = "/images/fire.webp"
+    document.getElementById("gif2").src = "/images/fire.webp"
     document.body.style.backgroundColor = "black"
     document.querySelector("h3").textContent = "Things that make me Angry";
     document.querySelector("h3").style.color="#EC1625";
     document.querySelector("h3").style.fontFamily = "IM Fell DW Pica SC";
-    document.getElementById("music").src = "angry_music.mp3";
+    document.getElementById("music").src = "/audio/angry_music.mp3";
     document.querySelector("footer").querySelector("p").style.color = "#EC1625"
 }
 
 function gif2Function(){
-    document.getElementById("gif2").src = "fire.webp"
-    document.getElementById("gif1").src = "fire.webp"
+    document.getElementById("gif2").src = "/images/fire.webp"
+    document.getElementById("gif1").src = "/images/fire.webp"
     document.body.style.backgroundColor = "black"
     document.querySelector("h3").textContent = "Things that make me Angry";
     document.querySelector("h3").style.color="#EC1625";
     document.querySelector("h3").style.fontFamily = "IM Fell DW Pica SC";
-    document.getElementById("music").src = "angry_music.mp3";
+    document.getElementById("music").src = "/audio/angry_music.mp3";
     document.querySelector("footer").querySelector("p").style.color = "#EC1625"
 }
 
 function fav1Function(){
-    document.getElementById("img1").src = "slow-driver.jpg";
+    document.getElementById("img1").src = "/images/slow-driver.jpg";
     document.getElementById("one").style.backgroundColor = "#E31C12";
     document.getElementById("fav1").textContent = "Bad Drivers";
     document.getElementById("fav1").style.color= "black";
@@ -43,7 +43,7 @@ function fav1Function(){
 }
 
 function fav2Function(){
-    document.getElementById("img2").src = "rude customers.jpg";
+    document.getElementById("img2").src = "/images/rude customers.jpg";
     document.getElementById("two").style.backgroundColor = "#E31C12";
     document.getElementById("fav2").textContent = "Rude Customers";
     document.getElementById("fav2").style.color= "black";
@@ -54,7 +54,7 @@ function fav2Function(){
 }
 
 function fav3Function(){
-    document.getElementById("img3").src = "loud-chewing.png";
+    document.getElementById("img3").src = "/images/loud-chewing.png";
     document.getElementById("three").style.backgroundColor = "#E31C12";
     document.getElementById("fav3").textContent = "Loud Chewing";
     document.getElementById("fav3").style.color= "black";
