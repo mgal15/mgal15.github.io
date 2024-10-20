@@ -1,0 +1,128 @@
+h1{
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#name1{
+    color: rgb(185, 185, 23);
+}
+
+p{
+    /* padding: 300px 400px 0 400px; */
+    font-size: 30px;
+    text-align: center;
+    margin: auto 0;
+    padding: 120px 400px 0 400px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+header{
+    background-color: lightyellow;
+    /* background-image: linear-gradient(red, yellow), url(sun1.png); */
+    background-image: linear-gradient(rgba(241, 93, 144, 0.24), rgba(232, 207, 47, 0.9)), url(sun1.png);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 300px 0;
+}
+.title{
+  display: grid;
+  grid-template-columns:.2fr 2fr .2fr;
+}
+#image{
+  grid-column: 3;
+}
+#image:hover{
+  transition: all .4s;
+    transform: translateY(.4em);
+}
+.logo{
+  font-size: 40px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.logo a{
+  text-decoration: none;
+  color: rgb(185, 185, 23);
+}
+body{
+    background-color: lightyellow;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(rgba(241, 93, 144, 0.24), rgba(232, 207, 47, 0.9));
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    align-items: center;
+    padding: 150px;
+    background-image: linear-gradient(rgba(232, 207, 47, 0.9), rgba(232, 165, 182, 0.3));
+}
+
+.box {
+    width: 60%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .pop {
+    margin: 300px auto;
+    padding: 100px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all .9s ease-in-out;
+  }
+  
+  .pop h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 30px;
+  }
+  .pop .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .pop .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
