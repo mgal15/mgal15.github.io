@@ -1,0 +1,53 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+} */
+canvas{
+  display: block;
+}
+main{
+  text-align: center;
+}
+
+canvas {
+  padding: 10px;
+}
+header{
+  padding: 40px;
+  text-align: center;
+}
+h1{
+  font-size: 100px;
+  margin: auto 15px;
+}
+h2{
+  font-size: 40px;
+  margin: auto 15px;
+}
+body{
+  background-color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home{
+  display: grid;
+  grid-template-rows: .5fr .4fr;
+
+}
+.buttons{
+  display: grid;
+  grid-template-rows: repeat(3, .4fr);
+}
+img{
+  width: 40%;
+  margin: auto;
+}
+.buttons a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+#defaultCanvas0{
+  padding-top: 100px;
+  margin: auto;
+}
+
