@@ -2,31 +2,43 @@ function setup(){
     createCanvas(700,750);
 }
 function draw(){
-    let rad = 150;
-    let line_y = 224;
-    stroke("black");
+    let x = mouseX;
+    let y = mouseY;
     background("#7c8874");
-    
+
+    noStroke();
+    //stroke("black");
+    fill("#a1895f");
+    triangle(700,0,550,200,700,200); //red triangle right
+    rect(550,200,150,550); //right side
+
+    fill("#1a1e21");
+    rect(520,220,30,40); //black rectangle
+
+    fill("#8b7943");
+    rect(550,260,40,50); //yellow rectangle
+    rect(460,310,90,120); //yellow rectangle
+
+    fill("#1b482c");
+    rect(550,430,50,100); //green rectangle
+
+    fill("#8a2822");
+    rect(500,530,50,220);  //red rectangle
+
+    stroke("black");
+
     fill("#893229");
     strokeWeight(3);
-    circle(width/2,150,rad); //balloon
+    circle(mouseX,mouseY,150); //balloon
 
     stroke("black");
     strokeWeight(1);
     fill("black");
-    line(340,line_y,340,300); //line
-    line(360,line_y+1,340,300) //line cross
-    line(340,line_y,360,300); //line cross
-    arc(350, 300, 20, 30, 0, PI); //bottom of balloon
-    line(360,line_y+1,360,390); //line
-
-    noStroke();
-    let x = mouseX;
-    let y = mouseY;
-    let ix = width - mouseX;
-    let iy = height - mouseY;
-    fill(240, 194, 70, 127);
-    ellipse(width/2, 750, height, iy*2);
+    line(mouseX-10,mouseY+74,mouseX-10,mouseY+150); //line
+    line(mouseX+10,mouseY+75,mouseX-10,mouseY+150) //line cross
+    line(mouseX-10,mouseY+74,mouseX+10,mouseY+150); //line cross
+    arc(mouseX, mouseY+150, 20, 30, 0, PI); //bottom of balloon
+    line(mouseX+10,mouseY+75,mouseX+10,mouseY+240); //line
 
     noStroke();
     fill("#846c43");
@@ -71,25 +83,6 @@ function draw(){
     fill("#424a3e");
     rect(0,570,290,180); //bottom green
     triangle(290,570,290,750,500,750); //bottom triangle
-
-    strokeWeight(2);
-    //stroke("black");
-    fill("#a1895f");
-    triangle(700,0,550,200,700,200); //red triangle right
-    rect(550,200,150,550); //right side
-
-    fill("#1a1e21");
-    rect(520,220,30,40); //black rectangle
-
-    fill("#8b7943");
-    rect(550,260,40,50); //yellow rectangle
-    rect(460,310,90,120); //yellow rectangle
-
-    fill("#1b482c");
-    rect(550,430,50,100); //green rectangle
-
-    fill("#8a2822");
-    rect(500,530,50,220);  //red rectangle
     
 }
 
