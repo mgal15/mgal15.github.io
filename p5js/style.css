@@ -1,7 +1,4 @@
-/* html, body {
-  margin: 0;
-  padding: 0;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=IM+Fell+DW+Pica+SC&family=Metal+Mania&family=Solitreo&display=swap');
 canvas{
   display: block;
 }
@@ -26,7 +23,7 @@ h2{
 }
 body{
   background-color: #D7D2C7;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Solitreo';
 }
 .home{
   display: grid;
