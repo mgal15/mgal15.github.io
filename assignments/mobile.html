@@ -8,46 +8,80 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Sculpture Finds</title>
+    <link rel="stylesheet" href="/style/style4.css">
   </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="jumbotron">
             <h1>Welcome to the scavenger Hunt of Sculptures</h1>
-            <p>Follow the riddles and find the correct sculptures across campus</p>
+            <p>Follow the riddles and find the correct sculptures across campus and answer the questions know if you got the correct sculpture!</p>
         </div>
 
         <div class="card">
+            <img id="img1" src="/images/questionmark.jpg" width="100%" alt="">
             <div class="card-header">Riddle One</div>
 
             <div class="card-body">
                 <p>In a place where knowledge blooms and thoughts take wing <br> I rise from the ground, a curious thing. <br> With steps leading up, towards the sky's embrace <br> Find me where art and ambition interlace. <br> What am I, a wonder, both bold and serene, <br> A journey upward, in a vibrant scene?</p>
 
-                <div class="input-group mb-3">
+                <!-- <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">1</span>
-                    <input type="text" class="form-control" placeholder="Sculpture Name?" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
+                    <input type="text" class="form-control" placeholder="Sculpture Name?" aria-label="Username" aria-describedby="basic-addon1" name="q1" id="correct">
+                </div> -->
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">2</span>
-                    <input type="text" class="form-control" placeholder="How Many Stairs?" aria-label="Username" aria-describedby="basic-addon1">
+                <h6>Who Created this Sculpture?</h6>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r1" value="r1">
+                    <label class="form-check-label" for="q1_r1">
+                        Bruce Nauman
+                    </label>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r2" value="r2">
+                    <label class="form-check-label" for="q1_r2">
+                        Nancy Holt
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r3" value="r3">
+                    <label class="form-check-label" for="q1_r2">
+                        Tom Otterness
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r4" value="r4">
+                    <label class="form-check-label" for="q1_r2">
+                        Joel Shapiro
+                    </label>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="enter_one()">Enter</button>
             </div>
         </div>
 
-        <div class="card">
+        <!-- <div class="card">
             <div class="card-header">Riddle Two</div>
 
             <div class="card-body">
                 <p>Amidst the rocks where knowledge grows,<br> I watch the scene, as life ebbs and flows. <br> Figures in motion, some lifting with care, <br> A dance of labor, a whimsical air. <br> Rest on the ledge, where strength meets the mind, <br> What am I, a tribute to those intertwined?</p>
 
-                <!-- In a plaza of knowledge, where students convene,
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option id="1" value="1">One</option>
+                    <option id="2" value="2">Two</option>
+                    <option id="3" value="3">Three</option>
+                </select>
+
+                <button type="button" class="btn btn-primary">Enter</button>
+
+                 In a plaza of knowledge, where students convene,
                 I stand with my figures, a playful scene.
                 Crafted from metal, they toil and they play,
                 Lifting great burdens in a whimsical way.
                 On ledges and rocks, their stories unfold,
                 What am I, a testament to strength bold? -->
 
-                <div class="input-group mb-3">
+                <!-- <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">1</span>
                     <input type="text" class="form-control" placeholder="Sculpture Name?" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
@@ -55,13 +89,24 @@
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">2</span>
                     <input type="text" class="form-control" placeholder="How Many Stairs?" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            </div>
-        </div>
+                </div> -->
+            <!-- </div>
+        </div> --> 
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="mobile1.html">Next</a></li>
+            </ul>
+          </nav>
 
     </div>
-    
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="/java/java_mobile.js"></script>
 </body>
 </html>
