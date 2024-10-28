@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Sculpture Finds</title>
+    <link rel="stylesheet" href="/style/style4.css">
+  </head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <img id="img1" src="/images/questionmark.jpg" width="100%" alt="">
+            <div class="card-header text-center">Riddle One</div>
+
+            <div class="card-body">
+                <p>In a place where knowledge blooms and thoughts take wing <br> I rise from the ground, a curious thing. <br> With steps leading up, towards the sky's embrace <br> Find me where art and ambition interlace. <br> What am I, a wonder, both bold and serene, <br> A journey upward, in a vibrant scene?</p>
+
+                <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    HINT!!
+                </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    This is also called the stairs to nowhere
+                </div>
+                </div>
+
+                <h6>Who Created this Sculpture?</h6>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r1" value="r1">
+                    <label class="form-check-label" for="q1_r1">
+                        Bruce Nauman
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r2" value="r2">
+                    <label class="form-check-label" for="q1_r2">
+                        Nancy Holt
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r3" value="r3">
+                    <label class="form-check-label" for="q1_r2">
+                        Tom Otterness
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1_r4" value="r4">
+                    <label class="form-check-label" for="q1_r2">
+                        Joel Shapiro
+                    </label>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="enter_one()">Enter</button>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example" id="show">
+            <ul class="pagination">
+              <li id="next_button" class="page-item"><a class="page-link" href="mobile1.html">Next</a></li>
+            </ul>
+          </nav>
+
+    </div>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="/java/java_mobile.js"></script>
+</body>
+</html>
