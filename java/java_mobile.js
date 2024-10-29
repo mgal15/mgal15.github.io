@@ -1,5 +1,5 @@
 function enter_one(){
-    var answers = "bruce nauman";
+    var answers = "Bruce Nauman";
     var question = document.getElementById('q1');
     if(answers == question.value){
         document.getElementById('q1').style.fontWeight = "bold";
@@ -20,7 +20,7 @@ function enter_one(){
     }
 }
 function enter_two(){
-    var answers = "tom otterness";
+    var answers = "Tom Otterness";
     var question = document.getElementById('q2');
     if(answers == question.value){
         document.getElementById('q2').style.fontWeight = "bold";
@@ -41,7 +41,7 @@ function enter_two(){
     }
 }
 function enter_three(){
-    var answers = "richard serra";
+    var answers = "Richard Serra";
     var question = document.getElementById('q3');
     if(answers == question.value){
         document.getElementById('q3').style.fontWeight = "bold";
@@ -64,7 +64,7 @@ function enter_three(){
 }
 
 function enter_four(){
-    var answers = "lloyd hamrol";
+    var answers = "Lloyd Hamrol";
     var question = document.getElementById('q4');
     if(answers == question.value){
         document.getElementById('q4').style.fontWeight = "bold";
