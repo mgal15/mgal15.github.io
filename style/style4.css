@@ -1,0 +1,12 @@
+#next_button{
+    display: none;
+}
+body{
+    padding: 40px 20px;
+}
+#message{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    display: none;
+}
