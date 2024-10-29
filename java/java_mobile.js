@@ -9,6 +9,7 @@ function enter_one(){
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
         document.getElementById('message').textContent = "Correct! Great Job";
+        document.getElementById('img1').src = "/images/stairs.jpg";
     } else {
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "red";
@@ -29,6 +30,7 @@ function enter_two(){
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
         document.getElementById('message').textContent = "Correct! Great Job";
+        document.getElementById('img2').src = "/images/feats.jpg";
     } else {
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "red";
@@ -49,6 +51,7 @@ function enter_three(){
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
         document.getElementById('message').textContent = "Correct! Great Job";
+        document.getElementById('img3').src = "/images/triangle.jpg"
     } else {
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "red";
@@ -71,6 +74,7 @@ function enter_four(){
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
         document.getElementById('message').textContent = "Correct! Great Job";
+        document.getElementById('img4').src = "/images/logs.jpg";
     } else {
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "red";
