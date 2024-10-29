@@ -10,3 +10,26 @@ body{
     font-weight: bold;
     display: none;
 }
+.card{
+    background-color: rgba(100,100,23,.2);
+}
+p{
+    font-weight: 600;
+}
+.card-header{
+    font-weight: 700;
+}
+.jumbotron{
+    background-color: rgba(100,100,23,.2);
+}
+.jumbotron h1{
+    text-align: center;
+}
+.jumbotron p{
+    text-align: center;
+    font-weight: 700;
+}
+ol{
+    font-weight: 600;
+}
+
