@@ -1,0 +1,27 @@
+section{
+    padding: 50px;
+}
+#books{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+body{
+
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+section h2{
+    text-align: center;
+    font-size: 25px;
+}
+section img{
+    margin: auto 0;
+}
