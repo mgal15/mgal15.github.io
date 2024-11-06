@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     section.innerHTML = `
                         <h2>${item.title}</h2> 
                    <!-- Displays the title of the item -->
-                        <img src="${item.coverimg}" alt="${item.alttext}" style="width:100%;max-width:300px;">
+                        <img src="${item.coverimg}" alt="${item.alttext}" style="width:100%;">
                    <!-- Displays an image with a source and alternative text from the item, with a set style -->
-                        <p><strong>Altitude: ${item.genre}</strong></p>
+                        <p><strong>Genre: ${item.genre}</strong></p>
                    <!-- Displays the altitude of the item -->
                         <p>${item.status}  <a href = "${item.linktopango}" target = "_blank">Read More</a></p>
                    <!-- Displays text and a 'Read More' link that opens in a new tab -->
