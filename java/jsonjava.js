@@ -3,30 +3,55 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Fetches JSON data from the provided URL.
         fetch('/json/books.json')
+
             .then(response => response.json())  // Parses the response as JSON.
+
             .then(data => {
-                // Gets a reference to the element with the id 'content' in the HTML document.
-                const contentDiv = document.getElementById('books');
-                // Iterates over each item in the fetched data array.
-                data.forEach(item => {
-                    // Creates a new 'section' element.
-                    const section = document.createElement('section');
-                    // Sets the innerHTML of the section with dynamic data from the current item.
-                    section.innerHTML = `
-                        <h2>${item.title}</h2> 
-                   <!-- Displays the title of the item -->
-                        <img src="${item.coverimg}" alt="${item.alttext}" style="width:100%;">
-                   <!-- Displays an image with a source and alternative text from the item, with a set style -->
-                        <p><strong>Genre: ${item.genre}</strong></p>
-                   <!-- Displays the altitude of the item -->
-                        <p>${item.status}  <a href = "${item.linktopango}" target = "_blank">Read More</a></p>
-                   <!-- Displays text and a 'Read More' link that opens in a new tab -->
-                    `;
-                    // Appends the newly created section to the 'content' div.
-                    contentDiv.appendChild(section);
-                });
+
+                const sorted = sortBooks(data);
+
+                organize(sorted);
             })
-            .catch(error => console.error('Error loading the data:', error)); 
-            // Catches and logs any errors in the fetch operation.
-    });
+        });
+
+        function sortBooks(books) {
+            const order = ["Currently Read", "Recently Read", "Want to Read", "Want to Re-Read"];
+
+            return books.sort((a,b) =>{
+                return order.indexOf(a.status) - order.indexOf(b.status);
+            });
+        }
+
+        function organize(data){
+            const bookDiv = document.getElementById('books');
+            bookDiv.innerHTML = '';
+
+            let currentStatus = '';
+            let num = 0;
+
+            data.forEach(item=>{
+                if (item.status !== currentStatus) {
+                    currentStatus = item.status;
+                
+                    const head = document.createElement('h2');
+                    head.textContent = `${currentStatus}`;
+                    head.id = "head"+num;
+                    bookDiv.appendChild(head);
+                }
+                const section = document.createElement('section');
+                section.id = "book"+num;
+                num++;
+                // Sets the innerHTML of the section with dynamic data from the current item.
+                section.innerHTML = `
+                    <img src="${item.coverimg}" alt="${item.alttext}" style="width:100%;">
+                    <h3>${item.title}</h3> 
+                    <h4>Genre: ${item.genre}</h4>
+                    <p id='rating'>Rating: ${item.Rating}</p>
+                    <p id='comments'><br> &emsp;  ${item.About}</p>
+                    <p id='link'>Want to read yourself? <br> <a href="${item.linktopango}" target="_blank">Buy from Pango</a>
+                `;
+                // Appends the newly created section to the 'content' div.
+                bookDiv.appendChild(section);
+            });
+        }
     
