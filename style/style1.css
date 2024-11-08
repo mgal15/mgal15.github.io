@@ -216,3 +216,12 @@ footer{
     color: white;
     position: relative;
 }
+main h2{
+    font-size: 50px;
+    text-align: center;
+}
+main p{
+    padding: 80px;
+    font-size: 25px;
+    text-align: justify;
+}
