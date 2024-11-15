@@ -149,7 +149,40 @@ var elizaKeywords = [
         "If you enjoyed (2), you might like [movie recommendation based on (2)]."
     ]]
    ]],
+
 ["(like|want|enjoy)", 5,[
+    ["* i (like|want|enjoy) * action * comedy * (movie|film)*", [
+        "For action-comedy movies, try *Rush Hour* for a mix of laughs and thrills.",
+            "*Kingsman: The Secret Service* combines slick action with humor.", 
+            "*21 Jump Street* is a fun action-comedy with plenty of laughs."
+    ]],
+    ["* i (like|want|enjoy) * action * comedy * (tv show|series)*", [
+        "For action-comedy TV shows, check out *Brooklyn Nine-Nine* for police action with a comedic twist.",
+            "*Chuck* is a great mix of action and humor.", 
+            "*The Boys* blends dark humor with superhero action."
+    ]],
+    
+    ["* i (like|want|enjoy) * romance * drama * (movie|film)*", [
+        "For a romantic drama, *The Notebook* is a classic choice.", 
+        "Try *A Star is Born* for romance with a dramatic twist.",
+            "*La La Land* is a romance-drama with a musical flair."
+    ]],
+    ["* i (like|want|enjoy) * romance * drama * (tv show|series)*", [
+        "If you're into romantic dramas, *Outlander* weaves romance with historical drama.",
+            "Try *This Is Us* for heartfelt romance and family drama.",
+            "*Normal People* offers an intimate take on romance and drama."
+    ]],
+    
+    ["* i (like|want|enjoy) * horror * thriller * (movie|film)*", [
+        "For horror-thriller movies, try *Get Out* for a psychological edge.",
+            "*A Quiet Place* combines horror with suspense.", 
+            "*The Silence of the Lambs* is a classic thriller with horror elements."
+    ]],
+    ["* i (like|want|enjoy) * horror * thriller * (tv show|series)*", [
+        "If you're interested in horror-thriller shows, *The Haunting of Hill House* delivers chills and thrills.",
+            "Try *Stranger Things* for a mix of horror, thriller, and nostalgia.",
+            "*Hannibal* is a psychological thriller with horror undertones."
+    ]],
     ["* i (like|want|enjoy) * horror * (movie|film)*", [
         "You seem to enjoy horror movies! How about *The Conjuring*?", 
         "If you're looking for something chilling, *Hereditary* is a must-watch.", 
@@ -203,38 +236,6 @@ var elizaKeywords = [
         "For sci-fi TV, try *Stranger Things* for a blend of horror and sci-fi.",
          "*The Expanse* offers a more serious, space-focused sci-fi experience.",
           "*Black Mirror* explores futuristic themes and technology in every episode."
-    ]],
-    ["* i (like|want|enjoy) * action * comedy * (movie|film)*", [
-        "For action-comedy movies, try *Rush Hour* for a mix of laughs and thrills.",
-            "*Kingsman: The Secret Service* combines slick action with humor.", 
-            "*21 Jump Street* is a fun action-comedy with plenty of laughs."
-    ]],
-    ["* i (like|want|enjoy) * action * comedy * (tv show|series)*", [
-        "For action-comedy TV shows, check out *Brooklyn Nine-Nine* for police action with a comedic twist.",
-            "*Chuck* is a great mix of action and humor.", 
-            "*The Boys* blends dark humor with superhero action."
-    ]],
-    
-    ["* i (like|want|enjoy) * romance * drama * (movie|film)*", [
-        "For a romantic drama, *The Notebook* is a classic choice.", 
-        "Try *A Star is Born* for romance with a dramatic twist.",
-            "*La La Land* is a romance-drama with a musical flair."
-    ]],
-    ["* i (like|want|enjoy) * romance * drama * (tv show|series)*", [
-        "If you're into romantic dramas, *Outlander* weaves romance with historical drama.",
-            "Try *This Is Us* for heartfelt romance and family drama.",
-            "*Normal People* offers an intimate take on romance and drama."
-    ]],
-    
-    ["* i (like|want|enjoy) * horror * thriller * (movie|film)*", [
-        "For horror-thriller movies, try *Get Out* for a psychological edge.",
-            "*A Quiet Place* combines horror with suspense.", 
-            "*The Silence of the Lambs* is a classic thriller with horror elements."
-    ]],
-    ["* i (like|want|enjoy) * horror * thriller * (tv show|series)*", [
-        "If you're interested in horror-thriller shows, *The Haunting of Hill House* delivers chills and thrills.",
-            "Try *Stranger Things* for a mix of horror, thriller, and nostalgia.",
-            "*Hannibal* is a psychological thriller with horror undertones."
     ]],
     ["* i want something lighthearted *", [
         "If you're looking for something light and fun, *The Princess Bride* is an excellent pick.",
