@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Handjet:wght@100..900&family=IM+Fell+DW+Pica+SC&family=Markazi+Text:wght@400..700&family=Metal+Mania&family=Solitreo&display=swap');
+
+body{
+    font-family: handjet;
+    background-color: rgb(157, 227, 235);
+
+}
+main{
+    background-image: url(/images/film\ strip.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+   padding: 150px;
+}
+header{
+    margin: 30px;
+}
+h3{
+    font-size: 50px;
+    text-align: center;
+}
+h4{
+    font-size: 40px;
+    text-align: center;
+}
+
+table{
+    text-align: center;
+}
+td{
+    padding: 0;
+}
+textarea{
+    font-size: 25px;
+    font-family: Handjet;
+    font-weight: 600;
+}
+
+#talk{
+    font-size: 20px;
+}
+#reset{
+    font-size: 20px;
+}
+#input{
+    font-size: 14px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
