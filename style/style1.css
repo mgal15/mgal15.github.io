@@ -225,3 +225,53 @@ main p{
     font-size: 25px;
     text-align: justify;
 }
+.goal h3{
+    font-size: 30px;
+    text-align: center;
+}
+.goal p{
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+.idea h3{
+    font-size: 30px;
+    text-align: center;
+}
+.idea ol{
+    font-size: 25px;
+}
+.idea li{
+    padding: 0 40px;
+}
+.purpose h3{
+    font-size: 30px;
+    text-align: center;
+}
+.purpose p{
+    text-align: justify;
+    font-size: 25px;
+    padding: 0 45px;
+}
+.sect2{
+    display: flex;
+    padding: 10px;
+}
+.purpose{
+    flex: 1;
+}
+.idea{
+    flex: 1;
+}
+#figma{
+    margin: 0 auto;
+    padding: 15px;
+    width: 1000px;
+    display: block;
+}
+.servers li{
+   font-size: 22px;
+}
+.servers li{
+    list-style-type: disc;
+}
