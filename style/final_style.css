@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Handjet:wght@100..900&family=IM+Fell+DW+Pica+SC&family=Langar&family=Markazi+Text:wght@400..700&family=Metal+Mania&family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Handjet:wght@100..900&family=IM+Fell+DW+Pica+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Langar&family=Markazi+Text:wght@400..700&family=Metal+Mania&family=Solitreo&display=swap');
+
+#next_button{
+    display: none;
+}
+body{
+    padding: 40px 20px;
+    font-family: 'Josefin sans';
+}
+#message{
+    text-align: center;
+    color: green;
+    display: none;
+}
+.card{
+    background-color: #d0cdcd;
+    font-family: 'Josefin sans';
+}
+.card-header{
+    border: none;
+}
+
+ol{
+    font-size: 19px;
+}
+#first{
+    font-family: 'Josefin Sans';
+    font-size: 23px;
+    text-align: left;
+    margin-bottom: 0;
+}
+#second{
+    font-family: 'Langar';
+    text-align: center;
+    margin-bottom: 0;
+}
+#third{
+    font-family: 'Josefin Sans';
+    font-size: 23px;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+h1{
+    color: #0F2752;
+}
+h2{
+    font-size: 23px;
+}
+.container1{
+    background-color: #7DBCE2;
+    padding: 15px;
+    border-radius: 15px;
+}
+.container1 p{
+    font-size: 17px;
+    text-align: center;
+}
+.one{
+    padding: 10px 0 10px 10px;
+}
+.input{
+    margin-bottom: 0;
+}
+#name{
+    padding: 10px 10px 10px 0;
+}
+.start{
+    font-family: 'Langar';
+    border-radius: 90px;
+    font-size: 30px;
+    background-color: #0F2752;
+    border: none;
+    margin: 30px;
+    padding: 5px 30px;
+}
+#riddle{
+    font-family: 'Langar';
+    font-size: 34px;
+    text-align: center;
+}
+.start a{
+    color: white;
+    text-decoration: none;
+}
+h3{
+    background-color: #7DBCE2;
+    display: block;
+    margin: 10px 70px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.btn{
+    color: #0F2752;
+    background-color: #7DBCE2;
+    text-align: center;
+}
+.grid{ 
+    justify-self: center;
+    padding: 10px;
+} 
+.btn-2{
+    color: white;
+    background-color: #0F2752;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+form{
+    padding: 10px;
+}
