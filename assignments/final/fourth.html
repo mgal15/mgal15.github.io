@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Sculpture Finds</title>
+    <link rel="stylesheet" href="/style/final_style.css">
+  </head>
+<body>
+    <h1 id="riddle">Western Wander</h1>
+    <h3>Riddle #4</h3>
+    <div class="card">
+    <div class="card-body">
+        <p>I'm a path that circles round,<br> Where effort and motion can be found. <br> You'll find me where feet often fly, <br> What am I? Take a guess, don't be shy."</p>
+        <p>Points: <h5 id="points"></h5></p>
+
+        <div class="grid text-center">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" id="hintbutton1" onclick="hint1()">
+                HINT 1
+            </button>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" id="hintbutton2" onclick="hint2()">
+                HINT 2
+            </button>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" id="hintbutton3" onclick="hint3()">
+                HINT 3
+            </button>
+        </div>
+        <div class="collapse" id="collapse1">
+            <div class="card card-body">
+                I am a place where people test their limits
+            </div>
+        </div>
+        <div class="collapse" id="collapse2">
+            <div class="card card-body">
+                I am used for practice and fun
+            </div>
+        </div>
+        <div class="collapse" id="collapse3">
+            <div class="card card-body">
+                I am the track next to the rec center
+            </div>
+        </div>
+
+        <h6></h6>
+
+        <div id="q1_border" class="input-group mb-3"></div>
+            <input type="text" class="form-control" placeholder="capitalize !" aria-label="Username" id="q4" aria-describedby="basic-addon1">
+            </div>
+
+            <p id="message">Correct! Great job</p>
+            
+        <button type="button" class="btn-2" onclick="enter_four()">Enter</button>
+        <nav aria-label="Page navigation example" id="show">
+            <ul class="pagination">
+              <li id="next_button" class="page-item"><a class="page-link" href="end.html">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="/java/java_mobile.js"></script>
+</body>
+</html>
