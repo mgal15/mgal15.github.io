@@ -24,13 +24,88 @@ function enter_one(){
         hint1();
     }
 }
+function enter_onept1(){
+    if(document.getElementById('Radio2').checked){
+        document.getElementById('Radio2').style.fontWeight = "bold";
+        document.getElementById('Radio2').style.color = "green";
+        document.getElementById('Radio2').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Stay here to find the next place";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
+function enter_onept2(){
+    if(document.getElementById('Radio3').checked){
+        document.getElementById('Radio3').style.fontWeight = "bold";
+        document.getElementById('Radio3').style.color = "green";
+        document.getElementById('Radio3').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Go on for the next resource";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
+function enter_onept3(){
+    if(document.getElementById('Radio4').checked){
+        document.getElementById('Radio4').style.fontWeight = "bold";
+        document.getElementById('Radio4').style.color = "green";
+        document.getElementById('Radio4').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head back to the 6th floor (main) for the next clue";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
+function enter_onept4(){
+    if(document.getElementById('Radio4').checked){
+        document.getElementById('Radio4').style.fontWeight = "bold";
+        document.getElementById('Radio4').style.color = "green";
+        document.getElementById('Radio4').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head outside for the next place to discover";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
 function enter_two(){
-    var answers = "Red Square";
-    var question = document.getElementById('q2');
-    if(answers == question.value){
-        document.getElementById('q2').style.fontWeight = "bold";
-        document.getElementById('q2').style.color = "green";
-        document.getElementById('q2').style.border = "1px green solid";
+    var answers = "Wilson Library";
+    var answer1 = "wilson library";
+    var answer2 = "wilson Library";
+    var answer3 = 'Wilson library'
+    var question = document.getElementById('secondQ');
+    if(answers == question.value || answer1==question.value||answer2==question.value||answer3==question.value){
+        document.getElementById('secondQ').style.fontWeight = "bold";
+        document.getElementById('secondQ').style.color = "green";
+        document.getElementById('secondQ').style.border = "1px green solid";
         document.getElementById('next_button').style.display = "block";
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
@@ -40,16 +115,56 @@ function enter_two(){
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "red";
         document.getElementById('message').textContent = "Wrong, try again";
-        document.getElementById('q2').style.fontWeight = "bold";
-        document.getElementById('q2').style.color = "red";
-        document.getElementById('q2').style.border = "1px red solid";
-        hint1();
+        document.getElementById('secondQ').style.fontWeight = "bold";
+        document.getElementById('secondQ').style.color = "red";
+        document.getElementById('secondQ').style.border = "1px red solid";
+        points-=1;
+        updatepoints();
+    }
+}
+function enter_twopt1(){
+    if(document.getElementById('Radio1').checked){
+        document.getElementById('Radio1').style.fontWeight = "bold";
+        document.getElementById('Radio1').style.color = "green";
+        document.getElementById('Radio1').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head up the stairs towards Haggard Hall";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
+function enter_twopt2(){
+    if(document.getElementById('Radio2').checked){
+        document.getElementById('Radio2').style.fontWeight = "bold";
+        document.getElementById('Radio2').style.color = "green";
+        document.getElementById('Radio2').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head outside for the next clue";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
     }
 }
 function enter_three(){
-    var answers = "Carver Gym";
+    var answers = "Red Square";
+    var ans1 = "red square";
+    var ans2 = "red Square"
+    var ans3 = "Red square";
     var question = document.getElementById('q3');
-    if(answers == question.value){
+    if(answers == question.value|| ans1 == question.value|| ans2 == question.value||ans3 == question.value){
         document.getElementById('q3').style.fontWeight = "bold";
         document.getElementById('q3').style.color = "green";
         document.getElementById('q3').style.border = "1px green solid";
@@ -69,18 +184,38 @@ function enter_three(){
     }
     
 }
-
+function enter_threept1(){
+    if(document.getElementById('Radio3').checked){
+        document.getElementById('Radio3').style.fontWeight = "bold";
+        document.getElementById('Radio3').style.color = "green";
+        document.getElementById('Radio3').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head outside for the next clue";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
 function enter_four(){
-    var answers = "Track Field";
+    var answers = "Carver Gym";
+    var ans1 = "carver gym";
+    var ans2 = "carver Gym";
+    var ans3 = "Carver gym";
     var question = document.getElementById('q4');
-    if(answers == question.value){
+    if(answers == question.value || ans1 == question.value|| ans2 == question.value|| ans3 == question.value){
         document.getElementById('q4').style.fontWeight = "bold";
         document.getElementById('q4').style.color = "green";
         document.getElementById('q4').style.border = "1px green solid";
         document.getElementById('next_button').style.display = "block";
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
-        document.getElementById('message').textContent = "Correct! Head over there!";
+        document.getElementById('message').textContent = "Correct! Stand Outside the gym!";
         correctAns();
     } else {
         document.getElementById('message').style.display = "inline";
@@ -90,6 +225,94 @@ function enter_four(){
         document.getElementById('q4').style.color = "red";
         document.getElementById('q4').style.border = "1px red solid";
         hint1();
+    }
+    
+}
+function enter_fourpt1(){
+    if(document.getElementById('Radio2').checked){
+        document.getElementById('Radio2').style.fontWeight = "bold";
+        document.getElementById('Radio2').style.color = "green";
+        document.getElementById('Radio2').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head outside for the next clue";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
+    }
+}
+
+function enter_six(){
+    var answers = "Wade King";
+    var ans1 = "wade king";
+    var ans2 = "Wade king";
+    var ans3 = "wade King "
+    var question = document.getElementById('q6');
+    if(answers == question.value|| ans1 == question.value|| ans2== question.value||ans3==question.value){
+        document.getElementById('q6').style.fontWeight = "bold";
+        document.getElementById('q6').style.color = "green";
+        document.getElementById('q6').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! You've Finished!";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        document.getElementById('q6').style.fontWeight = "bold";
+        document.getElementById('q6').style.color = "red";
+        document.getElementById('q6').style.border = "1px red solid";
+        hint1();
+    }
+}
+function enter_five(){
+    var answers = "Environmental Science";
+    var ans1 = "environmental science";
+    var ans2 = "environmental Science";
+    var ans3 = "Environmental science";
+    var question = document.getElementById('q5');
+    if(answers == question.value || ans1 == question.value|| ans2 == question.value|| ans3== question.value){
+        document.getElementById('q5').style.fontWeight = "bold";
+        document.getElementById('q5').style.color = "green";
+        document.getElementById('q5').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head over there!";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        document.getElementById('q5').style.fontWeight = "bold";
+        document.getElementById('q5').style.color = "red";
+        document.getElementById('q5').style.border = "1px red solid";
+        hint1();
+    }
+}
+function enter_fivept1(){
+    if(document.getElementById('Radio3').checked){
+        document.getElementById('Radio3').style.fontWeight = "bold";
+        document.getElementById('Radio3').style.color = "green";
+        document.getElementById('Radio3').style.border = "1px green solid";
+        document.getElementById('next_button').style.display = "block";
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "green";
+        document.getElementById('message').textContent = "Correct! Head outside for the next clue";
+        correctAns();
+    } else {
+        document.getElementById('message').style.display = "inline";
+        document.getElementById('message').style.color = "red";
+        document.getElementById('message').textContent = "Wrong, try again";
+        points-= 1;
+        updatepoints();
     }
 }
 
