@@ -12,10 +12,10 @@
   </head>
 <body>
     <h1 id="riddle">Western Wander</h1>
-    <h3>Riddle #2</h3>
+    <h3>Riddle #1.1</h3>
     <div class="card">
     <div class="card-body">
-        <p>"Across the way, where knowledge grows,<br> A place where quiet thought bestows. <br> Within its walls, stories await,<br> Find the door that opens to your fate."</p>
+        <p>"On this floor, where culture thrives, <br> A voice of the campus comes alive. <br> Through waves unseen, it makes its call, <br> Find the source that connects us all."</p>
         <p>Points: <h5 id="points"></h5></p>
 
         <div class="grid text-center">
@@ -31,37 +31,57 @@
         </div>
         <div class="collapse" id="collapse1">
             <div class="card card-body">
-                Place where students learn
+                Not a speaker, but it plays the voices of students 
             </div>
         </div>
         <div class="collapse" id="collapse2">
             <div class="card card-body">
-                Books and silence fills the air
+                The waves don't means the ocean 
             </div>
         </div>
         <div class="collapse" id="collapse3">
             <div class="card card-body">
-                Cross the street and find Wilson Library
+                Going left from the stairs, this is the student radio station
             </div>
         </div>
-            
 
-        <h6>Who am i?</h6>
-
-        <div id="q1_border" class="input-group mb-3"></div>
-            <input type="text" class="form-control" placeholder="Building Name" aria-label="Username" id="secondQ" aria-describedby="basic-addon1">
+        <h6>What is the station number?</h6>
+        <div class="check">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio1">
+                <label class="form-check-label" for="Radio1">
+                  94.5
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio2">
+                <label class="form-check-label" for="Radio2">
+                    97.8
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio3">
+                <label class="form-check-label" for="Radio3">
+                    89.3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio4">
+                <label class="form-check-label" for="Radio4">
+                    86.7
+                </label>
+                </div>
+              <p id="message">Correct! Great job</p>
         </div>
-
-        <p id="message">Correct! Great job</p>
-            
-        <button type="button" class="btn-2" onclick="enter_two()">Enter</button>
+    </div>
+        <button type="button" class="btn-2" onclick="enter_onept2()">Enter</button>
         <nav aria-label="Page navigation example" id="show">
             <ul class="pagination">
-              <li id="next_button" class="page-item"><a class="page-link" href="second_1.html">Next</a></li>
+              <li id="next_button" class="page-item"><a class="page-link" href="first_3.html">Next</a></li>
             </ul>
           </nav>
         </div>
-    </div>
+    
     <script>
         $(document).ready(function(){
           $('[data-toggle="popover"]').popover();

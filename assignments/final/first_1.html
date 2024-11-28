@@ -12,10 +12,10 @@
   </head>
 <body>
     <h1 id="riddle">Western Wander</h1>
-    <h3>Riddle #2</h3>
+    <h3>Riddle #1.1</h3>
     <div class="card">
     <div class="card-body">
-        <p>"Across the way, where knowledge grows,<br> A place where quiet thought bestows. <br> Within its walls, stories await,<br> Find the door that opens to your fate."</p>
+        <p>"To find a place where stories unite, <br> Where cultures blend and futures take flight,<br> Up high in the Union, the seventh awaits, <br> A haven for all, through its welcoming gates."</p>
         <p>Points: <h5 id="points"></h5></p>
 
         <div class="grid text-center">
@@ -31,37 +31,57 @@
         </div>
         <div class="collapse" id="collapse1">
             <div class="card card-body">
-                Place where students learn
+                Remember when you enter the Viking Union, you start on the 6th floor 
             </div>
         </div>
         <div class="collapse" id="collapse2">
             <div class="card card-body">
-                Books and silence fills the air
+                Think of a word that means 'many together'
             </div>
         </div>
         <div class="collapse" id="collapse3">
             <div class="card card-body">
-                Cross the street and find Wilson Library
+                This is up the stairs across the help desk
             </div>
         </div>
-            
 
-        <h6>Who am i?</h6>
-
-        <div id="q1_border" class="input-group mb-3"></div>
-            <input type="text" class="form-control" placeholder="Building Name" aria-label="Username" id="secondQ" aria-describedby="basic-addon1">
+        <h6>What is the name of this area?</h6>
+        <div class="check">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio1">
+                <label class="form-check-label" for="Radio1">
+                  The Unity Hall
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio2">
+                <label class="form-check-label" for="Radio2">
+                    The Multicultural Center
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio3">
+                <label class="form-check-label" for="Radio3">
+                    The Diversity Center
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio4">
+                <label class="form-check-label" for="Radio4">
+                    The global Community Center
+                </label>
+                </div>
+              <p id="message">Correct! Great job</p>
         </div>
-
-        <p id="message">Correct! Great job</p>
-            
-        <button type="button" class="btn-2" onclick="enter_two()">Enter</button>
+    </div>
+        <button type="button" class="btn-2" onclick="enter_onept1()">Enter</button>
         <nav aria-label="Page navigation example" id="show">
             <ul class="pagination">
-              <li id="next_button" class="page-item"><a class="page-link" href="second_1.html">Next</a></li>
+              <li id="next_button" class="page-item"><a class="page-link" href="first_2.html">Next</a></li>
             </ul>
           </nav>
         </div>
-    </div>
+    
     <script>
         $(document).ready(function(){
           $('[data-toggle="popover"]').popover();
