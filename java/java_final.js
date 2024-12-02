@@ -253,7 +253,7 @@ function enter_fourpt1(){
 
 function enter_six(){
     var answers = "Wade King";
-    var ans1 = "wade king";
+    var ans1 = "wade King";
     var ans2 = "Wade king";
     var ans3 = "wade king";
     var question = document.getElementById('q6');
