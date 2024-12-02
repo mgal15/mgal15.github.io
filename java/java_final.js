@@ -4,8 +4,11 @@ document.getElementById('points').innerHTML = points;
 
 function enter_one(){
     var answers = "Viking Union";
+    var ans1 = "viking union";
+    var asn2 = "Viking union";
+    var asn3 = "viking Union"
     var question = document.getElementById('q1');
-    if(answers == question.value){
+    if(answers == question.value|| ans1 == question.value|| ans2== question.value|| ans3 == question.value){
         document.getElementById('q1').style.fontWeight = "bold";
         document.getElementById('q1').style.color = "green";
         document.getElementById('q1').style.border = "1px green solid";
@@ -13,6 +16,7 @@ function enter_one(){
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
         document.getElementById('message').textContent = "Correct! Head inside the building";
+
         correctAns();
     } else {
         document.getElementById('message').style.display = "inline";
@@ -171,7 +175,7 @@ function enter_three(){
         document.getElementById('next_button').style.display = "block";
         document.getElementById('message').style.display = "inline";
         document.getElementById('message').style.color = "green";
-        document.getElementById('message').textContent = "Correct! Stand Outside the gym!";
+        document.getElementById('message').textContent = "Correct! Stand by the Fountain!";
         correctAns();
     } else {
         document.getElementById('message').style.display = "inline";
@@ -251,7 +255,7 @@ function enter_six(){
     var answers = "Wade King";
     var ans1 = "wade king";
     var ans2 = "Wade king";
-    var ans3 = "wade King "
+    var ans3 = "wade king";
     var question = document.getElementById('q6');
     if(answers == question.value|| ans1 == question.value|| ans2== question.value||ans3==question.value){
         document.getElementById('q6').style.fontWeight = "bold";
