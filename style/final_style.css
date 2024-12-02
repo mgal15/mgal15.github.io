@@ -127,3 +127,56 @@ form{
 .check{
     padding: 10px;
 }
+h6{
+    padding: 10px 0;
+}
+@media(min-width: 430px){
+    .riddle1{
+        font-size: 25px;
+        margin: 0 auto;
+        justify-items: center;
+
+    }
+    .container1{
+        max-width: 700px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header{
+        max-width: 700px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    h2{
+        font-size: 30px;
+    }
+    ol li{
+        font-size: 25px;
+    }
+    .container1 p{
+        font-size: 25px;
+    }
+    #points{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 17px;
+    }
+    .page-link{
+        font-size: 17px;
+    }
+    .card{
+        max-width: 700px;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    h3{
+        max-width: 500px;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
