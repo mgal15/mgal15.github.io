@@ -3,6 +3,15 @@
 
 #next_button{
     display: none;
+    border-radius: 15px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.page-link{
+    background-color: #7DBCE2;
+    border: #7DBCE2;
+    color: #0F2752;
 }
 body{
     padding: 40px 20px;
@@ -16,6 +25,7 @@ body{
 .card{
     background-color: #d0cdcd;
     font-family: 'Josefin sans';
+    font-size: 18px;
 }
 .card-header{
     border: none;
