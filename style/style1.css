@@ -275,3 +275,295 @@ main p{
 .servers li{
     list-style-type: disc;
 }
+@media(max-width: 500px){
+    .logo{
+        font-size: 20px;
+    }
+    .banner-text h2{
+        font-size: 28px;
+        margin-top: 50px;
+    }
+    .banner-text h3{
+        font-size: 26px;
+    }
+    .banner-text p{
+        font-size: 20px;
+    }
+    .banner{
+        align-content: center;
+        height: 40vh;
+        width: 100%;
+    }
+    .sideleft{
+        padding: 20px;
+        align-items: center;
+    }
+    .sideleft h2{
+        font-size: 26px;
+    }
+    .assignments{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        max-width: 300px;
+        justify-self: center;
+    }
+    .center{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .center h3 a{
+        font-size: 19px;
+    }
+    .sideright{
+        padding: 40px;
+        display: block;
+        background-color: #e8e8e8;
+        justify-self: center;
+    }
+    .sideright h2{
+        font-size: 26px;
+    }
+    .right-img{
+        width: 100%;
+    }
+    li a{
+        font-size: 19px;
+    }
+    ul li a{
+        padding: 10px;
+    }
+    ul li{
+        font-size: 19px;
+        margin: 10px;
+    }
+    ul{
+        padding: 0;
+    }
+    .left-text{
+        justify-self: center;
+    }
+    main h2{
+        font-size: 26px;
+        padding: 10px;
+    }
+    main p{
+        font-size: 15px;
+        padding: 20px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    .header h2{
+        font-size: 26px;
+    }
+    .aboutme{
+        padding: 40px;
+        font-size: 20px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #BF7282;
+        align-self: center;
+    }
+    .box{
+        margin: 10px;
+        background-color: #e8e8e8;
+        border-radius: 30px;
+        padding: 10px 5px;
+    }
+    .box p{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .goal h3{
+        font-size: 26px;
+    }
+    .goal p{
+        font-size: 20px;
+    }
+    .idea h3{
+        font-size: 24px;
+        text-align: center;
+    }
+    .idea ol{
+        font-size: 20px;
+    }
+    .idea li{
+        padding: 0 10px;
+    }
+    .purpose h3{
+        font-size: 24px;
+        text-align: center;
+    }
+    .purpose p{
+        text-align: justify;
+        font-size: 20px;
+        padding: 15px;
+    }
+    .sect2{
+        display: grid;
+        padding: 10px;
+    }
+    
+    #figma{
+        margin: 0 auto;
+        padding: 15px;
+        display: block;
+        max-width: 300px;
+    }
+    .servers li{
+       font-size: 18px;
+    }
+    .servers li{
+        list-style-type: disc;
+    }
+}
+
+@media(max-width: 780px) and (min-width: 450px){
+    .logo{
+        font-size: 40px;
+    }
+    .banner-text h2{
+        font-size: 50px;
+    }
+    .banner-text h3{
+        font-size: 40px;
+    }
+    .banner-text p{
+        font-size: 30px;
+    }
+    .banner{
+        height: 80vh;
+        width: 100%;
+    }
+    .sideleft{
+        padding: 20px;
+        align-items: center;
+    }
+    .sideleft h2{
+        font-size: 35px;
+    }
+    .assignments{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        justify-self: center;
+    }
+    .center{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .center h3 a{
+        font-size: 20px;
+    }
+    .sideright{
+        padding: 40px;
+        display: block;
+        background-color: #e8e8e8;
+        justify-self: center;
+    }
+    .sideright h2{
+        font-size: 35px;
+    }
+    .right-img{
+        width: 100%;
+    }
+    li a{
+        font-size: 25px;
+    }
+    ul li a{
+        padding: 10px;
+    }
+    ul li{
+        font-size: 19px;
+        margin: 10px;
+    }
+    ul{
+        padding: 0;
+    }
+    .left-text{
+        justify-self: center;
+    }
+    main h2{
+        font-size: 35px;
+        padding: 10px;
+    }
+    main p{
+        font-size: 20px;
+        padding: 30px;
+    }
+    footer{
+        font-size: 18px;
+    }
+    .header h2{
+        font-size: 35px;
+    }
+    .aboutme{
+        padding: 40px;
+        font-size: 20px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #BF7282;
+        align-self: center;
+    }
+    .box{
+        margin: 10px;
+        background-color: #e8e8e8;
+        border-radius: 30px;
+        padding: 10px 5px;
+    }
+    .box p{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .goal h3{
+        font-size: 30px;
+    }
+    .goal p{
+        font-size: 25px;
+    }
+    .idea h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .idea ol{
+        font-size: 25px;
+    }
+    .idea li{
+        padding: 0 20px;
+    }
+    .purpose h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .purpose p{
+        text-align: justify;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .sect2{
+        display: grid;
+        padding: 10px;
+    }
+    
+    #figma{
+        margin: 0 auto;
+        padding: 15px;
+        display: block;
+        max-width: 500px;
+    }
+    .servers li{
+       font-size: 20px;
+    }
+    .servers li{
+        list-style-type: disc;
+    }
+}
